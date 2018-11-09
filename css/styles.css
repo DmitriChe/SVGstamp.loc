@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 820px;
+}
+
+.stamp-container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.stamp-types {
+    max-width: 820px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.settings_data-field {
+    display: block;
+    width: 200px;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.button-next {
+    margin-left: auto;
+}
+
+.button-add {
+    margin-right: auto;
+}
+
+.button-download {
+    margin: auto;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit-cover">
+    <meta http-equip="X-UA-Compatible" content="ie=edge">
+    <title>SVGstamp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script defer src="node_modules/svg.js/dist/svg.min.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <div class="stamp-choose wrapper">
+        <div class="stamp-types">
+            <div class="stamp-type">
+                <div class="stamp-container round" id="round"></div>
+                <span>Круглая печать</span>
+                <div>
+                    <span>Диаметр:</span>
+                    <input type="text" value="100" class="settings_data-field diameter">
+                </div>
+            </div>
+            <div class="stamp-type">
+                <div class="stamp-container triangle" id="triangle"></div>
+                <span>Треугольная печать</span>
+                <div>
+                    <span>Длина стороны</span>
+                    <input type="text" value="100" class="settings_data-field length">
+                </div>
+            </div>
+            <div class="stamp-type">
+                <div class="stamp-container square" id="square"></div>
+                <span>Прямоугольная печать</span>
+                <div>
+                    <span>Ширина</span>
+                    <input type="text" value="100" class="settings_data-field width">
+                </div>
+                <div>
+                    <span>Высота</span>
+                    <input type="text" value="100" class="settings_data-field height">
+                </div>
+            </div>
+        </div>
+
+        <form action="">
+            <button value="reset stamps" class="reset"></button>
+            <input type="button" value="далее" class="button button-next">
+        </form>
+    </div>
+
+    <hr>
+    <!--<div class="stamp-modify wrapper">-->
+        <!--<form action="">-->
+            <!--<input type="button" value="добавить" class="button button-add">-->
+        <!--</form>-->
+        <!--<div class="">-->
+
+        <!--</div>-->
+        <!--<form action="">-->
+            <!--<input type="button" value="добавить" class="button button-download">-->
+        <!--</form>-->
+
+    <!--</div>-->
+
+
+
+
+
+</body>
+</html>
