@@ -25,18 +25,17 @@ SVG.on(document, 'DOMContentLoaded', function() {
             let height = document.querySelector('.height').value;
             let canvasSize = parseInt(getComputedStyle(document.querySelector('.stamp-container')).width);
             let canvasCenter = Math.ceil(canvasSize / 2);
+
             drawRound.clear();
             drawSquare.clear();
             drawTriangle.clear();
 
             drawRound.circle(diameter).move(canvasCenter-diameter/2, canvasCenter-diameter/2).fill('none').stroke({ color: '#ffa153', width: 5, linecap: 'round' });
-
             drawTriangle.polyline([
                     canvasCenter-length/2, canvasCenter+length*Math.sqrt(3)/2/2, canvasCenter+length/2, canvasCenter+length*Math.sqrt(3)/2/2,
                     canvasCenter, canvasCenter-length*Math.sqrt(3)/2/2, canvasCenter-length/2, canvasCenter+length*Math.sqrt(3)/2/2
                 ]).fill('none')
                 .stroke({ color: '#f06', width: 5, linecap: 'round', linejoin: 'round' });
-
             drawSquare.rect(width, height).move(canvasCenter-width/2, canvasCenter-height/2).fill('none').stroke({ color: '#a38bff', width: 5, linecap: 'round' });
         };
 
